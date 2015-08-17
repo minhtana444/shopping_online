@@ -23,34 +23,6 @@
 
 <head>
 
-	<?= $this->Html->meta(['http-equiv' => 'X-UA-Compatible', 'content' => 'IE=Edge,chrome=1']) ?>
-
-<?php if ($this->request->sp) { ?>
-
-	<?= $this->Html->meta(['charset' => 'utf-8']) ?>
-
-<?php } else { ?>
-
-	<?= $this->Html->meta(['http-equiv' => 'Content-Type', 'content' => 'text/html; charset=utf-8']) ?>
-
-	<?= $this->Html->meta(['http-equiv' => 'Content-Style-Type', 'content' => 'text/css']) ?>
-
-	<?= $this->Html->meta(['http-equiv' => 'Content-Script-Type', 'content' => 'text/javascript']) ?>
-
-<?php } ?>
-
-
-	<?= $this->Html->meta('description', @$description_for_layout ?: '') ?>
-
-	<?= $this->Html->meta('keywords', @$keywords_for_layout ?: '') ?>
-
-
-	<?= $this->fetch('meta') ?>
-
-	<?= $this->fetch('css') ?>
-
-	<?= $this->fetch('script') ?>
-
 
 </head>
 
