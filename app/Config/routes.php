@@ -36,7 +36,7 @@
 //        '/captcha', ['controller' => 'pages', 'action' => 'captcha_image']
 //);
 
-Router::connect('/home/a7735968', array('controller' => 'mains', 'action' => 'index'));
+Router::connect('/', array('controller' => 'mains', 'action' => 'index'));
 Router::connect('/home', array('controller' => 'mains', 'action' => 'index'));
 
 /**
